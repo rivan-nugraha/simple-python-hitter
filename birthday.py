@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import json
 import requests
 import logging
@@ -14,7 +16,7 @@ if not os.path.exists(LOG_DIR):
 
 logging.basicConfig(
     filename=os.path.join(LOG_DIR, LOG_FILE),
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
